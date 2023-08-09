@@ -2,60 +2,116 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [1. Preamble](#1-preamble)
+* [2. Project Summary](#2-project-summary)
+* [3. Learning Objectives](#3-learning-objectives)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Entrega](#7-entrega)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 
-## 1. Preámbulo
+## 1. Preamble
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos u odiamos, y muchos no podemos
-vivir sin ellas.
+Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Social networks have invaded our lives. We love them or we hate them, and many of us cannot live without them
 
 ![adem-ay-Tk9m_HP4rgQ-unsplash](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
 
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
+There are social networks of all kinds and for all kinds of interests. For example,
+in a financing round with investors, a social network was presented
+for chemists in which users could post articles about their
+research, comment on your peers' articles, and filter articles
+according to certain tags or its popularity, what is most recent, or what was
+most commented.
 
-## 2. Resumen del proyecto
+## 2. Project Summary
 
-En este proyecto construirás una Red Social sobre lo que decidan tú y tu equipo.
-Podría ser, por ejemplo, sobre alimentación saludable, feminismo, educación,
-salud, energías renovables, amantes de las [Empanadas](https://es.wikipedia.org/wiki/Empanada)
-o de los [Tacos de Canasta](https://es.wikipedia.org/wiki/Taco),
-de la [Feijoada](https://es.wikipedia.org/wiki/Feijoada), o de lo que sea.
+In this project will be built a social network for electronic lovers. If you always explore about new circuits, components or embedded systems: It's for you!
 
-Tu Red Social tendrá que permitir a cualquier usuario crear una cuenta de acceso
-y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
+There are some minimum requirements:
+* Sign up with email and password or with an existent google account.
+* Sign in with his/her account.
+* Create, Edit, Delete and Like posts.
 
-Por lo tanto, en este proyecto construirás una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-[_responsive_](https://curriculum.laboratoria.la/es/topics/css/02-responsive) (con más de una vista / página)
-en la que podamos **leer y escribir datos**.
+Basically, this project will be a [Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application) [_responsive_](https://curriculum.laboratoria.la/es/topics/css/02-responsive) (with more than one view / page) where we can **read and write data**.
 
-### Los objetivos generales de este proyecto son los siguientes
 
-* Desarrollar una SPA con temática de red social
-* Aplicar los conceptos de responsividad en el desarrollo de las vistas (templates)
-* Implementar un router para la navegación entre las diferentes vistas de la aplicación
-* Emplear un servicio externo para la persistencia de datos de la aplicación
-* Crear una suite de pruebas unitarias que permitan testear código asíncrono
+### General objectivos for this project:
 
-Para lograr estos objetivos, deberás aprender y hacer uso de las siguientes
-herramientas o habilidades técnicas:
+* Develop a SPA with a social network theme
+* Apply the concepts of responsiveness in the development of views (templates)
+* Implement a router for navigation between the different views of the application
+* Use an external service for application data persistence
+* Create a suite of unit tests that allow testing asynchronous code
 
-## 3. Objetivos de aprendizaje
+To achieve these goals, you will need to learn and make use of the following
+tools or technical skills:
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+### Design process
+1. Firstable, read the project requierements several times
+
+2. Then, determine the project backlog
+For this task I've organized the flow of the project in a [Trello board](https://trello.com/b/XFQU94HZ) (Be carefull because you can edit the board)
+
+    2.1 Define the User Histories to complete the project
+
+3. Organize the sprint backlog
+
+4. Understand the tecnologies requiered for the development
+
+[Figma link for diagram](https://www.figma.com/file/8NTykB7mUz3HiccACirD7a/Environment?type=whiteboard&node-id=0%3A1&t=1kouKXS4dq9Qjonm-1) 
+
+![environment graph](./documentation/env.png)
+
+5. Make the project lo-fi layout with the interactions between views
+
+The [Figma schema](https://www.figma.com/file/FsYaRSNTRd7U7DiMpr9rIu/Social-Network?type=whiteboard&node-id=0%3A1&t=7BkiVdZMqIRPNxu3-1) draws the principal views used in the lo-fi layout for the interactions with the application. 
+The general structure about the application is presente below
+
+![general structure for the app](./documentation/Social-Network.png)
+
+Each view per separate, or in detail are:
+
+![view 00](./documentation/Views/view_00.png)
+
+![view 01](./documentation/Views/view_01.png)
+
+![view 02](./documentation/Views/view_02.png)
+
+![view 03](./documentation/Views/view_03.png)
+
+![view 04](./documentation/Views/view_04.png)
+
+![view 05](./documentation/Views/view_05.png)
+
+![view 06](./documentation/Views/view_06.png)
+
+![view 07](./documentation/Views/view_07.png)
+
+![view 08](./documentation/Views/view_08.png)
+
+![view 09](./documentation/Views/view_09.png)
+
+![view 10](./documentation/Views/view_10.png)
+
+![view 11](./documentation/Views/view_11.png)
+
+![view 12](./documentation/Views/view_12.png)
+
+**Note 1:** When the user edits a post, can't edit the privacy status
+**Note 2:** The pop up messages are missing
+
+6. Check again if all the requirements are covered into the LFD
+
+7. Check again if there's missing any task in the backlog
+
+8. Plan and apply the first usability test since lo-fi design and collect usability feedback
+
+9. Start with the first UH: sign up (html, css, JavaScript, Firebase, pushState method)
+
+## 3. Learning Objectives
+
+The learning objectives achieved (understood and applied) in the project are :
 
 ### HTML
 

@@ -1,11 +1,10 @@
 // Este es el punto de entrada de tu aplicacion
-
 import firebase from 'firebase/compat/app';
-import { myFunction } from './lib/index.js';
-// Importar bibliotecas de MongoDB
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import 'firebase/compat/storage';
+
+import { myFunction } from './lib/index.js';
 
 const firebaseConfig = {
   apiKey: '',
