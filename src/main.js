@@ -1,5 +1,6 @@
 // Este es el punto de entrada de tu aplicacion
 import app from './lib/authService';
+import { db, colRef } from './lib/storeService';
 import { myFunction } from './lib/index.js';
 import home from './lib/home';
 import signIn from './lib/signIn';
@@ -40,5 +41,7 @@ window.onpopstate = () => {
 
 navigateTo(window.location.pathname || defaultRoute);
 
-console.log(app);
+// console.log(app);
+// console.log(db);
+// console.log(colRef);
 myFunction();
