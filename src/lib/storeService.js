@@ -3,7 +3,9 @@ import {
   getDocs,
   addDoc, deleteDoc, doc,
   query, where,
-  orderBy, serverTimestamp, FieldValue,
+  orderBy, serverTimestamp,
+  getDoc,
+  updateDoc,
 } from 'firebase/firestore';
 
 // init store service
@@ -12,6 +14,10 @@ export const db = getFirestore();
 // collection ref
 export const colRef = collection(db, 'post');
 
+// queries
+const q = query(colRef, orderBy('createdAt'));
+
+/*
 // queries
 const q = query(colRef, orderBy('createdAt'));
 
@@ -24,7 +30,6 @@ onSnapshot(q, (snapshot) => {
   console.log(posts);
 });
 
-/*
 // queries
 const q = query(colRef, where('pass', '==', 'me'), orderBy('text', 'desc'));
 
@@ -72,20 +77,57 @@ getDocs(colRef)
   });
 */
 
+/*
 // add post
 addDoc(colRef, {
-  text: 'Kiss',
-  pass: 'me',
-  createdAt: FieldValue.serverTimestamp(),
+  text: 'ueen',
+  pass: 'you',
+  createdAt: serverTimestamp(),
 })
   .then(() => {
     alert('Created');
   });
-/*
+
 // delete post
 const docRef = doc(db, 'post', 'LzeicGshkLbpcmzgtiGU');
 
 deleteDoc(docRef).then(() => {
   alert('Deleted');
+});
+*/
+
+/*
+// get one doc by its id and subscribe to its change
+const docRef = doc(db, 'post', 'HwZlpQabPH3XodOY9Z7W');
+
+getDoc(docRef)
+  .then((document) => {
+    console.log(document.data(), document.id);
+  });
+
+// subscribe to an unique doc when change
+onSnapshot(docRef, (document) => {
+  console.log(document.data(), document.id);
+});
+*/
+
+// update a document
+const docRef = doc(db, 'post', 'aW1XmHENplgBVyGrPFLE');
+
+updateDoc(docRef, {
+  text: 'updated pepito',
+  pass: 'Florez',
+  createdAt: serverTimestamp(),
+})
+  .then(() => {
+    alert('Updated');
+  });
+
+/*
+const docRef = doc(db, 'post', 'aW1XmHENplgBVyGrPFLE');
+
+// subscribe to an unique doc when change
+onSnapshot(docRef, (document) => {
+  console.log(document.data(), document.id);
 });
 */
