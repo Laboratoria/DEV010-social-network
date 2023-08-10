@@ -3,11 +3,13 @@ import app from './lib/authService';
 import { myFunction } from './lib/index.js';
 import home from './lib/home';
 import signIn from './lib/signIn';
+import signUp from './lib/signUp';
 import error from './lib/error';
 
 const routes = [
   { path: '/', component: home },
   { path: '/signIn', component: signIn },
+  { path: '/signUp', component: signUp },
   { path: '/error', component: error },
 ];
 
