@@ -1,13 +1,16 @@
 // Este es el punto de entrada de tu aplicacion
+import init from './components/init';
 import home from './components/home';
 import signIn from './components/signIn';
 import signUp from './components/signUp';
+import recoverPassword from './components/recoverPassword';
 import error from './components/error';
 
 const routes = [
-  { path: '/', component: home },
+  { path: '/', component: init },
   { path: '/signIn', component: signIn },
   { path: '/signUp', component: signUp },
+  { path: '/recoverPassword', component: recoverPassword },
   { path: '/error', component: error },
 ];
 

@@ -11,6 +11,8 @@ function signIn(navigateTo) {
   const inputPass = document.createElement('input');
   const buttonSignIn = document.createElement('button');
   const buttonSignInGoogle = document.createElement('button');
+  const aRecoverPassword = document.createElement('a');
+  const aSignUp = document.createElement('a');
 
   title.textContent = 'Sign In';
   form.className = 'sign-in';
@@ -20,6 +22,11 @@ function signIn(navigateTo) {
   buttonReturn.textContent = 'Return to home';
   buttonSignIn.textContent = 'Sign In';
   buttonSignInGoogle.textContent = 'Sign In with Google';
+  aRecoverPassword.innerHTML = 'Recover password';
+  aSignUp.innerHTML = 'Sign Up';
+
+  aRecoverPassword.href = '/recoverPassword';
+  aSignUp.href = '/signUp';
 
   inputEmail.name = 'email';
   inputPass.name = 'pass';
@@ -52,7 +59,7 @@ function signIn(navigateTo) {
   });
 
   form.append(labelEmail, inputEmail, labelPass, inputPass, buttonSignIn);
-  section.append(title, form, buttonSignInGoogle, buttonReturn);
+  section.append(title, form, buttonSignInGoogle, buttonReturn, aRecoverPassword, aSignUp);
 
   return section;
 }
