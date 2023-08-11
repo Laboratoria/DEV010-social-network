@@ -11,6 +11,7 @@ const routes = [
   { path: '/signIn', component: signIn },
   { path: '/signUp', component: signUp },
   { path: '/recoverPassword', component: recoverPassword },
+  { path: '/home', component: home },
   { path: '/error', component: error },
 ];
 

@@ -47,11 +47,12 @@ function signIn(navigateTo) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     signInAuth(inputEmail.value, inputPass.value);
+    // navigateTo('/home');
   });
 
   buttonSignInGoogle.addEventListener('click', () => {
     signInAuthGoogle();
-    // navigateTo('/');
+    // navigateTo('/home');
   });
 
   buttonReturn.addEventListener('click', () => {

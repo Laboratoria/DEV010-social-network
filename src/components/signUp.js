@@ -63,7 +63,7 @@ function signUp(navigateTo) {
     if (inputPass.value === inputPassCheck.value) {
       signUpAuth(inputEmail.value, inputPass.value);
       //   form.reset();
-      //   navigateTo('/');
+      //   navigateTo('/home');
       /*
         .then((response) => {
           console.log(response);

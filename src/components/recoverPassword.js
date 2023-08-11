@@ -23,6 +23,9 @@ function recoverPassword(navigateTo) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(inputEmail.value);
+    alert(inputEmail.value);
+    // navigateTo('/signIn');
+    navigateTo('/home');
   });
 
   buttonReturn.addEventListener('click', () => {
