@@ -1,3 +1,5 @@
+// import { signInUserAuth } from '../lib/auth';
+
 function signIn(navigateTo) {
   const section = document.createElement('section');
   const title = document.createElement('h2');
@@ -28,13 +30,24 @@ function signIn(navigateTo) {
   inputPass.required = true;
 
   /*
-  buttonSignIn.addEventListener('click', () => {
-    console.log(document.querySelector('form input[name="email"]').value);
-    console.log(document.querySelector('form input[name="pass"]').value);
-    navigateTo('/');
+  buttonSignIn.addEventListener('click', (e) => {
+    e.preventDefault();
+    signInUserAuth(inputEmail.value, inputPass.value)
+      .then((credential) => {
+        alert(`User has been created with the email ${inputEmail.value}`);
+      })
+      .then(() => {
+        // console.log(auth.currentUser);
+        // console.log(auth.currentUser.uid);
+        // createUserStore(theEmail, thePassword);
+      })
+      .catch((err) => {
+        // console.log(err.message.split('Firebase: ')[1]);
+        console.log(err.message);
+        alert(err.message.split('Firebase: ')[1]);
+      });
   });
   */
-
   buttonReturn.textContent = 'Return to home';
   buttonReturn.addEventListener('click', () => {
     navigateTo('/');

@@ -4,18 +4,38 @@ import {
   addDoc, deleteDoc, doc,
   query, where,
   orderBy, serverTimestamp,
-  getDoc,
+  getDoc, setDoc,
   updateDoc,
 } from 'firebase/firestore';
+import { db, auth } from './firebaseConfig';
 
 // init store service
-export const db = getFirestore();
 
 // collection ref
-export const colRef = collection(db, 'post');
+export const colRef = collection(db, 'user');
 
 // queries
 const q = query(colRef, orderBy('createdAt'));
+
+/**
+ * It's created for register users in the app
+ * @param {string} theEmail :email for signing up
+ * @param {string} thePassword :password of the account
+ */
+function createUserStore(theEmail, thePassword) {
+  const userColRef = collection(db, 'user');
+  const userDoc = doc(userColRef, auth.currentUser.uid);
+  setDoc(userDoc, {
+    email: theEmail,
+    pass: thePassword,
+    createdAt: serverTimestamp(),
+  })
+    .then(() => {
+      alert('Created in Firestore');
+    });
+}
+
+export { createUserStore };
 
 /*
 // queries
@@ -78,15 +98,6 @@ getDocs(colRef)
 */
 
 /*
-// add post
-addDoc(colRef, {
-  text: 'ueen',
-  pass: 'you',
-  createdAt: serverTimestamp(),
-})
-  .then(() => {
-    alert('Created');
-  });
 
 // delete post
 const docRef = doc(db, 'post', 'LzeicGshkLbpcmzgtiGU');
@@ -112,6 +123,7 @@ onSnapshot(docRef, (document) => {
 */
 
 // update a document
+/*
 const docRef = doc(db, 'post', 'aW1XmHENplgBVyGrPFLE');
 
 updateDoc(docRef, {
@@ -122,7 +134,7 @@ updateDoc(docRef, {
   .then(() => {
     alert('Updated');
   });
-
+*/
 /*
 const docRef = doc(db, 'post', 'aW1XmHENplgBVyGrPFLE');
 

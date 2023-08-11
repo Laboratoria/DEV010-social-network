@@ -1,11 +1,14 @@
 // Este es el punto de entrada de tu aplicacion
+/*
 import app from './lib/authService';
 import { db, colRef } from './lib/storeService';
 import { myFunction } from './lib/index.js';
-import home from './lib/home';
-import signIn from './lib/signIn';
-import signUp from './lib/signUp';
-import error from './lib/error';
+*/
+// import { auth } from './lib/firebaseConfig';
+import home from './components/home';
+import signIn from './components/signIn';
+import signUp from './components/signUp';
+import error from './components/error';
 
 const routes = [
   { path: '/', component: home },
@@ -44,4 +47,3 @@ navigateTo(window.location.pathname || defaultRoute);
 // console.log(app);
 // console.log(db);
 // console.log(colRef);
-myFunction();
