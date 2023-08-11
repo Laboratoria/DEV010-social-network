@@ -1,10 +1,4 @@
 // Este es el punto de entrada de tu aplicacion
-/*
-import app from './lib/authService';
-import { db, colRef } from './lib/storeService';
-import { myFunction } from './lib/index.js';
-*/
-// import { auth } from './lib/firebaseConfig';
 import home from './components/home';
 import signIn from './components/signIn';
 import signUp from './components/signUp';
@@ -43,7 +37,3 @@ window.onpopstate = () => {
 };
 
 navigateTo(window.location.pathname || defaultRoute);
-
-// console.log(app);
-// console.log(db);
-// console.log(colRef);

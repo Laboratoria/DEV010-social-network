@@ -1,21 +1,8 @@
 import {
-  getFirestore, collection, onSnapshot,
-  getDocs,
-  addDoc, deleteDoc, doc,
-  query, where,
-  orderBy, serverTimestamp,
-  getDoc, setDoc,
-  updateDoc,
+  collection, doc, setDoc, serverTimestamp,
+  // onSnapshot, getDocs, addDoc, deleteDoc, query, where, orderBy, getDoc, updateDoc,
 } from 'firebase/firestore';
 import { db, auth } from './firebaseConfig';
-
-// init store service
-
-// collection ref
-export const colRef = collection(db, 'user');
-
-// queries
-const q = query(colRef, orderBy('createdAt'));
 
 /**
  * It's created for register users in the app
@@ -38,6 +25,9 @@ function createUserStore(theEmail, thePassword) {
 export { createUserStore };
 
 /*
+// queries
+const q = query(colRef, orderBy('createdAt'));
+
 // queries
 const q = query(colRef, orderBy('createdAt'));
 

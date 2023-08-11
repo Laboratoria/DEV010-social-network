@@ -59,22 +59,24 @@ function signInAuthGoogle() {
     })
     .catch((error) => {
       // Ocurrió un error durante el inicio de sesión con Google
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
       // Maneja el error adecuadamente
       alert(error.message);
     });
 }
 
-/*
-signOut(auth)
-  .then(() => {
+function signOutAuth() {
+  signOut(auth)
+    .then(() => {
       console.log('The user signed out');
-      alert('User sign out')
-  })
-  .catch((err) => {
+      alert('User sign out');
+    })
+    .catch((err) => {
       console.log(err.message);
-  });
-*/
+    });
+}
 
-export { signUpAuth, signInAuth, signInAuthGoogle };
+export {
+  signUpAuth, signInAuth, signInAuthGoogle, signOutAuth,
+};
