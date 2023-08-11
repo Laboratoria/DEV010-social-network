@@ -1,10 +1,12 @@
 import {
-  getAuth,
   createUserWithEmailAndPassword,
+  signInWithPopup, GoogleAuthProvider,
   signOut, signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { createUserStore } from './store';
 import { auth } from './firebaseConfig';
+
+const provider = new GoogleAuthProvider();
 
 /**
  * Sign Up
@@ -39,12 +41,28 @@ function signUpAuth(theEmail, thePassword) {
 function signInAuth(theEmail, thePassword) {
   signInWithEmailAndPassword(auth, theEmail, thePassword)
     .then((credential) => {
-      // console.log('user loged in: ', credential.user);
-      alert(`User has been created with the email ${theEmail}`);
+      console.log('user loged in: ', credential.user);
     })
     .catch((err) => {
-    // console.log(err.message);
-      alert(err.message.split('Firebase: ')[1]);
+      alert(err.message);
+    });
+}
+
+function signInAuthGoogle() {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+    // El usuario ha iniciado sesión con éxito
+      const user = result.user;
+      console.log(user.email);
+      // Puedes acceder a la información del usuario a través de la variable user
+      createUserStore(user.email, 'thePassword');
+    })
+    .catch((error) => {
+      // Ocurrió un error durante el inicio de sesión con Google
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // Maneja el error adecuadamente
+      alert(error.message);
     });
 }
 
@@ -59,4 +77,4 @@ signOut(auth)
   });
 */
 
-export { createUserAuth };
+export { signUpAuth, signInAuth, signInAuthGoogle };
