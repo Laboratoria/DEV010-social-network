@@ -1,13 +1,17 @@
 // Este es el punto de entrada de tu aplicacion
-import app from './lib/authService';
-import { myFunction } from './lib/index.js';
-import home from './lib/home';
-import signIn from './lib/signIn';
-import error from './lib/error';
+import init from './components/init';
+import home from './components/home';
+import signIn from './components/signIn';
+import signUp from './components/signUp';
+import recoverPassword from './components/recoverPassword';
+import error from './components/error';
 
 const routes = [
-  { path: '/', component: home },
+  { path: '/', component: init },
   { path: '/signIn', component: signIn },
+  { path: '/signUp', component: signUp },
+  { path: '/recoverPassword', component: recoverPassword },
+  { path: '/home', component: home },
   { path: '/error', component: error },
 ];
 
@@ -37,6 +41,3 @@ window.onpopstate = () => {
 };
 
 navigateTo(window.location.pathname || defaultRoute);
-
-console.log(app);
-myFunction();
