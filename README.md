@@ -48,66 +48,105 @@ To achieve these goals, you will need to learn and make use of the following
 tools or technical skills:
 
 ### Design process
-1. Firstable, read the project requierements several times
+1. Firstable, read the project requierements several times ✅
 
-2. Then, determine the project backlog
+2. Then, determine the project backlog ✅
 For this task I've organized the flow of the project in a [Trello board](https://trello.com/b/XFQU94HZ) (Be carefull because you can edit the board)
 
-    2.1 Define the User Histories to complete the project
+    2.1 Define the User Stories ✅
 
-3. Organize the sprint backlog
+  ![User stories](./documentation/US.png)
 
-4. Understand the tecnologies requiered for the development
+    2.2 Define the User Stories - Hacker Edition 
 
-[Figma link for diagram](https://www.figma.com/file/8NTykB7mUz3HiccACirD7a/Environment?type=whiteboard&node-id=0%3A1&t=1kouKXS4dq9Qjonm-1) 
 
-![environment graph](./documentation/env.png)
+3. Organize the sprint backlog ✅
 
-5. Make the project lo-fi layout with the interactions between views
+    **Sprint 1:** US 1 (Sign Up) and US 2 (Sign In)
 
-The [Figma schema](https://www.figma.com/file/FsYaRSNTRd7U7DiMpr9rIu/Social-Network?type=whiteboard&node-id=0%3A1&t=7BkiVdZMqIRPNxu3-1) draws the principal views used in the lo-fi layout for the interactions with the application. 
-The general structure about the application is presente below
+    **Sprint 2:** US 3 (Create a Post) and US 4 (Edit a Post) and US 5 (Delete a Post)
+
+    **Sprint 3:** US 6 (Like a Post) and US 7 (Comment a post) and US 8 (Search someone) and US 9 (Add a Friend)
+
+4. Understand the tecnologies requiered for the development (Aditional) ✅
+
+![environment graph](./documentation/boiler_plate.png)
+
+5. Make the project lo-fi layout with the interactions between views ✅
 
 ![general structure for the app](./documentation/Social-Network.png)
 
-Each view per separate, or in detail are:
+With more detail:
 
-![view 00](./documentation/Views/view_00.png)
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+<img src="./documentation/BF/view_00.png" alt="View 01" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 01](./documentation/Views/view_01.png)
+<img src="./documentation/BF/view_01.png" alt="View 02" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 02](./documentation/Views/view_02.png)
+<img src="./documentation/BF/view_02.png" alt="View 03" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 03](./documentation/Views/view_03.png)
+<img src="./documentation/BF/view_03.png" alt="View 04" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 04](./documentation/Views/view_04.png)
+<img src="./documentation/BF/view_04.png" alt="View 05" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 05](./documentation/Views/view_05.png)
+<img src="./documentation/BF/view_05.png" alt="View 06" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 06](./documentation/Views/view_06.png)
+<img src="./documentation/BF/view_06.png" alt="View 07" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 07](./documentation/Views/view_07.png)
+<img src="./documentation/BF/view_07.png" alt="View 08" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 08](./documentation/Views/view_08.png)
+<img src="./documentation/BF/view_08.png" alt="View 09" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 09](./documentation/Views/view_09.png)
+<img src="./documentation/BF/view_09.png" alt="View 10" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 10](./documentation/Views/view_10.png)
+<img src="./documentation/BF/view_10.png" alt="View 11" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 11](./documentation/Views/view_11.png)
+<img src="./documentation/BF/view_11.png" alt="View 12" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-![view 12](./documentation/Views/view_12.png)
+<img src="./documentation/BF/view_13.png" alt="View 13" width="31%" style="border: 1px solid blue; margin: 1%;">
 
-**Note 1:** When the user edits a post, can't edit the privacy status
-**Note 2:** The pop up messages are missing
+</div>
 
-6. Check again if all the requirements are covered into the LFD
+6. Check again if all the requirements are covered into the LFD ✅
 
-7. Check again if there's missing any task in the backlog
+* It's missing the popups with validation data and messages for interact with user about the state of processes.
+* It's missing a Sign Out button in the application
 
-8. Plan and apply the first usability test since lo-fi design and collect usability feedback
+7. Check again if there's missing any task in the backlog ✅
 
-9. Start with the first UH: sign up (html, css, JavaScript, Firebase, pushState method)
+8. Plan and apply the first usability test since lo-fi design and collect usability feedback ✅
+
+9. Choose the style for the application according to the research and context ✅
+
+The investigation showed that the trending palettes in UI/UX design are the following:
+![Trending color palettes for UI/UX](./documentation/Palette_1.png)
+
+Of the 35 options, a survey was applied at a general level on which palette makes you think of an application of technology or electronics. From the result obtained, the 3 most chosen were presented to the potential users who, in the context of gender, chose palette number 9.
+
+* The main color will be #A67C84 (rgb 166,124,132)
+* The accompanying color will be #F2F2F2 (rgb 242, 242, 242)
+* Main letter #733224 (rgb 115, 50, 36)
+* Secondary letter #23261F (rgb 35,38, 31) 
+* The color of moving things #58594F (rgb 88, 89, 79)
+
+Styles were defined for each UI element taking into account the calls to action and the hierarchy of the elements.
+
+10. Design the High Definition Layout for the application 
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+<img src="./documentation/HF/view_00.png" alt="View 00" width="31%" style="border: 1px solid blue; margin: 1%;">
+
+<img src="./documentation/HF/view_01.png" alt="View 01" width="31%" style="border: 1px solid blue; margin: 1%;">
+
+<img src="./documentation/HF/view_02.png" alt="View 02" width="31%" style="border: 1px solid blue; margin: 1%;">
+
+<img src="./documentation/HF/view_03.png" alt="View 03" width="31%" style="border: 1px solid blue; margin: 1%;">
+
+</div>
+
+10. Start with the first UH: sign up (html, css, JavaScript, Firebase, pushState method)
+
+* 
 
 ## 3. Learning Objectives
 
