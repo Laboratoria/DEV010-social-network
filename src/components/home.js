@@ -32,8 +32,8 @@ function home(navigateTo) {
   const buttonPreview = document.createElement('button');
   const buttonNext = document.createElement('button');
 
-  title.innerHTML = 'Welcome to Electro-Net<br><p>News</p><br><p>Post</p><br><p>Commits</p><br><p>Nav</p>';
-  carrusel.className = 'carrusel';
+  title.innerHTML = 'Welcome to Electro-Net';// <br><p>News</p><br><p>Post</p><br><p>Commits</p><br><p>Nav</p>';
+  carrusel.className = 'carrusel slider';
   /*
 // Obtén los elementos del carrusel
 const carrusel = document.querySelector('.carrusel');
@@ -80,7 +80,7 @@ document.querySelector('.anterior').addEventListener('click', () => {
   // carrusel.append(img);
   buttonPreview.textContent = 'Previous';
   buttonNext.textContent = 'Next';
-  carrusel.append(buttonPreview, buttonNext);
+  // carrusel.append(buttonPreview, buttonNext);
 
   section.append(title, carrusel, post, commits, nav);
   return section;

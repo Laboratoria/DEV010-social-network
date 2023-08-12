@@ -1,17 +1,20 @@
 function init(navigateTo) {
   const section = document.createElement('section');
-  const title = document.createElement('h2');
+  const title = document.createElement('h1');
   const buttonStart = document.createElement('button');
   // const buttonSignUp = document.createElement('button');
 
-  buttonStart.textContent = 'Let\'s start';
+  section.className = 'init';
+
+  buttonStart.textContent = 'Go';
+  buttonStart.classList = 'go pulse';
   buttonStart.addEventListener('click', () => {
     navigateTo('/signIn');
   });
 
-  title.textContent = 'Welcome to my project';
+  title.textContent = 'Title';
 
-  section.append(title, buttonStart);
+  section.append(buttonStart, title);
   return section;
 }
 
