@@ -1,0 +1,145 @@
+.home-body {
+  background-color: #f1fcfa;
+  margin: 0;
+  overflow: hidden; /* Para ocultar el desplazamiento vertical */
+  position: relative; /* Añade position:relative para que los elementos se apilen */
+}
+
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hace que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Establece el estilo para el contenedor de contenido (centrado) */
+#root {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el contenido */
+  padding: 5rem; /* Agrega espacio alrededor del contenido */
+  /* Otros estilos para el contenedor de contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  border-radius: 2rem;
+}
+
+.logo{
+  width: 6rem;
+  position: relative;
+  border-radius: 3rem;
+  opacity: 0.8;
+}
+
+.header {
+  padding: 1.3rem; /* Agrega espacio alrededor del encabezado */
+  text-align: center; /* Centra el texto horizontalmente */
+  /* Otros estilos para el encabezado si es necesario */
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 1rem;
+  color:#303030;
+  
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.btnAll {
+  margin: 0.3rem;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  border-color:rgba(0, 255, 157, 0.2) ;
+  box-shadow: 1rem 1rem 1rem rgba(0, 255, 213, 0.2);
+}
+
+#googleButton {
+  
+  background-color: transparent;
+  border: none;
+  border-radius: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 2.2rem;
+  margin-top: 2rem;
+
+} 
+
+#imgGoogle {
+  margin: 0;
+  padding: 0;
+  width: 12rem;
+}
+@media screen and (max-width: 375px) {
+  body {
+    overflow: auto; 
+    display: flex;
+  }
+
+  /* Ajusta el estilo del contenedor principal para móvil */
+  #container {
+    height: auto; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  Establece el estilo para el canvas (fondo) en móvil */
+  #canvas {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+  }
+
+  /* Resto de los estilos para móvil */
+  #root {
+  width: 13rem;
+  margin: 1rem;
+  margin-left: -0.2rem;  
+  margin-right: -0.3rem;
+  }
+
+  .logo {
+    /* Estilos para el logo en móvil */
+    width: 4rem; /* Reduzca el tamaño del logo en móvil */
+    border-radius: 2rem;
+  }
+
+  .header {
+    font-size: 1rem; 
+  }
+
+  h1 {
+    
+    letter-spacing: 0.3rem; 
+  }
+
+  #button-container {
+    
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+ 
+  .btnAll {
+    font-size: 0.9rem; 
+  }
+
+  #googleButton {
+  width: 20%; 
+  }
+}
+
+
+ 
