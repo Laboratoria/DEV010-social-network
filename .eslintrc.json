@@ -27,6 +27,17 @@
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    "jest/valid-expect": "error",
+    "no-console": "off",
+    "no-alert": "off",
+    "object-curly-newline": "off",
+    "prefer-regex-literals": "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
+    "no-promise-executor-return": "off",
+    "no-throw-literal": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
+
 }
