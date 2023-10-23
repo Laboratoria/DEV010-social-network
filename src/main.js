@@ -27,8 +27,8 @@ function navigateTo(hash) {
   if (route && route.component) {
     window.history.pushState(
       {},
-      route.path,
-      window.location.origin + route.path,
+      route.path, // lo que mostrará la barra del navegador
+      window.location.origin + route.path, // colectivescool + /laruta
     );
     if (root.firstChild) {
       root.removeChild(root.firstChild);
