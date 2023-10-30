@@ -1,12 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Only Paws</title>
+    <!-- ********** Fuentes ********** -->
+    <!-- Títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ********** Hojas de Estilo ********** -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- * Vista 1 -->
+      <!-- <main class="main-1">
+      <section class="contenedor-carrusel">
+        <article class="carrusel">
+          <img src="img/slide1.png" alt="Carrusel 1" id="carrusel-1">
+          <img src="img/slide2.png" alt="Carrusel 2" id="carrusel-2">
+          <img src="img/slide3.png" alt="Carrusel 3" id="carrusel-3">
+        </article>
+        <nav class="nav-carrusel">
+          <a href="#carrusel-1"></a>
+          <a href="#carrusel-2"></a>
+          <a href="#carrusel-3"></a>
+        </nav>
+      </section>
+
+      <div class="contenedor-btn">
+        <button class="btn-principal">Saltar</button>
+      </div>
+    </main>   -->
+    <!-- * Fin Vista 1 -->
+
+    <!-- * Vista 2 -->
+     <!-- <main class="main-2" id="login-principal">
+      <div class="contenedor-logo-principal"></div>
+
+      <div class="contenedor-btn-secundario">
+        <p>Únete a la Comunidad #OnlyPaws</p>
+        <button class="btn-contraste">Registrarse</button>
+        <button class="btn-google"><img src="img/google.png" alt="ícono Google">Registrarse con Google</button>
+      </div>
+
+      <div class="contenedor-btn">
+        <p>¿Ya tienes una cuenta?</p>
+        <button class="btn-principal">Iniciar Sesión</button>
+      </div>
+    </main>  -->
+    <!-- * Fin Vista 2 -->
+
+    <!-- * Vista 3 -->
+      <!-- <main class="main-3">
+      <form action="" id="nombre-correo" class="form-datos">
+        <input type="text" name="email" id="username" placeholder="Nombre Completo">
+        <input type="email" name="email" id="email" placeholder="Correo Electrónico">
+      </form>
+
+      <form action="" id="contraseña-nueva" class="form-datos">
+        <input type="password" name="password" id="password" placeholder="Nueva Contraseña">
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Repetir Contraseña">
+      </form>
+
+      <div class="contenedor-btn">
+        <input type="submit" id='signUp' name="signup_submit" value="Continuar"/>
+        <a href="#login-principal">¿Ya tienes una cuenta? Inicia Sesión</a>
+      </div>
+    </main>   -->
+    <!-- * Fin Vista 3 -->
+    
+    <!-- * Vista 4 -->
+     <!-- <main class="main-4">
+      <div class="contenedor-ilustracion-contraseña"></div>
+
+      <form action="" class="form-fecha">
+        <input type="text" name="" id="nombre-mascota" placeholder="Nombre de Mascota">
+        <label for="">Fecha de nacimiento o de adopción de la mascota</label>
+        <div class="contenedor-fecha">
+          <input type="text" name="" id="dia" placeholder="Día">
+          <input type="text" name="" id="mes" placeholder="Mes">
+          <input type="text" name="" id="anho" placeholder="Año">
+        </div>
+      </form>
+
+      <article class="contenedor-seleccion-mascota">
+        <div class="seleccion-mascota">
+          <div class="seleccion-perro"></div>
+          <div class="seleccion">
+            <input type="radio" name="mascota" id="Perro">
+            <label for="Perro">Perro</label>
+          </div>
+        </div>
+
+        <div class="seleccion-mascota">
+          <div class="seleccion-gato"></div>
+          <div class="seleccion">
+            <input type="radio" name="mascota" id="Gato">
+            <label for="Gato">Gato</label>
+          </div>
+        </div>
+      </article>
+
+      <div class="contenedor-btn">
+        <button class="btn-principal">Registrarse</button>
+      </div>
+    </main>   -->
+    <!-- * Fin Vista 4 -->
+
+    <!-- * Vista 5 -->
+      <!-- <main class="main-5"> 
+      <div class="contenedor-logo-principal"></div> 
+       <h1>Iniciar Sesión</h1>
+      <form action="" class="form-datos">
+        <label for="login-correo-electronico">Ingresa tu correo electrónico:</label>
+        <input type="text" name="correo" id="correo">
+        <label for="login-contraseña">Ingresa tu contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña">
+      </form>
+      <div class="contenedor-btn">
+        <button class="btn-google"><img src="img/google.png" alt="ícono Google">Iniciar con Google</button>
+        <input type="submit" id='login' name="login" value="Iniciar Sesión"/>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </main>   -->
+    <!-- * Fin Vista 5-->
+
+    <!-- * Vista 6 -->
+      <!-- <main class="main-6">
+      <form action="" class="form-datos">
+        <label for="floatingInput">
+          Si olvidaste tu contraseña confirma el correo electrónico con el cual te registrarte para enviarte un enlace de recuperación. Procura revisar en la carpeta de Spam si no encuentras nuestro mensaje.
+        </label>
+        <input type="email" name="" id="floatingInput">
+      </form>
+      <div class="contenedor-pawtita">
+        <div class="contenedor-btn">
+          <button class="btn-principal" id="submit-data">Enviar Correo</button>
+        </div>
+      </div>
+    </main>   -->
+    <!-- * Fin Vista 6 -->
+    <!-- * Vista 7 -->
+     <!-- <main class="main-7">
+      <div class="contenedor-perrito-404"></div>
+      <article class="contenedor-texto-404">
+        <h1>Error 404</h1>
+        <h2>No puedo encontrar tu página en este zapato</h2>
+      </article>
+    </main>   -->
+    <!-- * Fin Vista 7 -->
+
+     <!-- * Vista 8 -->
+     <!-- <main class="main-8">
+       <header id="header" class="vista-8-header">
+        <img src="img/oplogo.png" alt="Logo" class="header-logo">
+        <div class="header-profile">
+          <img src="img/dueña.jpg" alt="Profile Picture" class="profile-image">
+          <p class="welcome-message">Bienvenido/a, [Nombre de Usuario]</p>
+        </div>
+        <button class="logout-button">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </header>
+      <div class="post-container">
+        <div class="profile-container">
+          <img src="img/dueña.jpg" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="actions">
+          <button class="action-button">
+            <i class="fa-regular fa-trash-can"></i>
+          <button class="action-button">
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button>
+        </div>
+        <div class="like-button">
+          <button class="action-button">
+            <i class="fa-solid fa-paw"></i>
+            <i class="paw"></i>
+          </button>
+        </div>
+        <div class="post-content">
+          <h4 class="username">Nombre de Usuario</h4>
+          <p class="timestamp">Hace 2 horas</p>
+          <p class="post-text">Contenido del post</p>
+        </div>
+      </div>
+      <footer id="footer">
+        <button class="footer-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="profile-button">
+          <i class="fa-solid fa-paw" id="profile-icon"></i>
+        </button>
+        <button class="footer-button">
+          <i class="fa-solid fa-dog"></i>
+        </button>
+      </footer>
+     </main> -->
+    <!-- * Fin Vista 8 -->
+    <!-- * Vista 9 -->
+    <!-- <main class="main-9">
+      <header id="header" class="vista-8-header">
+        <div class="header-profile">
+          <img src="img/dueña.jpg" alt="Profile Picture" class="profile-image">
+          <p class="welcome-message">Perfil de [Usuario]</p>
+        </div>
+        <button class="logout-button">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </header>
+      <h2 class="titulo-posts">Mis posts</h2>
+      <div class="post-container">
+        <div class="actions">
+          <button class="action-button">
+            <i class="fa-regular fa-trash-can"></i>
+          <button class="action-button">
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button>
+        </div>
+        <div class="like-button">
+          <button class="action-button">
+            <i class="fa-solid fa-paw"></i>
+            <i class="paw"></i>
+          </button>
+        </div>
+        <div class="post-content">
+          <h4 class="username">Usuario</h4>
+          <p class="timestamp">Hace 2 horas</p>
+         
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis laborum aperiam fuga facere nobis, facilis expedita officiis, voluptatem rem explicabo debitis sed at aut iste, quam incidunt repellendus corporis?
+          </p>
+        </div>
+      </div>
+      <footer id="footer">
+        <button class="footer-home">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button class="profile-button">
+          <i class="fa-solid fa-paw" id="profile-icon"></i>
+        </button>
+        <button class="footer-button">
+          <i class="fa-solid fa-dog"></i>
+        </button>
+      </footer>
+    </main> -->
+    <!-- * Fin Vista 9 -->
+
+  </body>
+  <script src="https://kit.fontawesome.com/a90d1ac3f5.js" crossorigin="anonymous"></script>
   <script type="module" src="main.js"></script>
-</body>
+ <!-- <script type="module">
+ // Importa las bibliotecas necesarias desde Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword ,onAuthStateChanged,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+import { getDatabase, ref, set, update } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+
+
+// Configura tu proyecto de Firebase (reemplaza con tu propia configuración)
+const firebaseConfig = {
+  apiKey: 'AIzaSyDCFX9nccrxLMKhDR35FCsRkiNwg9UL4vU',
+  authDomain: 'onlypaws-8b6cb.firebaseapp.com',
+  projectId: 'onlypaws-8b6cb',
+  storageBucket: 'onlypaws-8b6cb.appspot.com',
+  messagingSenderId: '57214639350',
+  appId: '1:57214639350:web:2bf2b904f656e016e8e0d7',
+  measurementId: 'G-4LMCV6VEMQ',
+};
+
+// Inicializa Firebase con tu configuración
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const database = getDatabase(app);
+
+
+let submit_data = document.getElementById("submit-data");
+
+submit_data.addEventListener("click", (event) => {
+  event.preventDefault();  // Evita que el formulario se envíe
+
+  let forgetEmail = document.getElementById("floatingInput").value;  // Obtén el valor del correo electrónico
+
+  if (!forgetEmail) {
+    swal("Advertencia", "Por favor, ingresa tu correo electrónico.", "warning");
+    return;
+  }
+
+  sendPasswordResetEmail(auth, forgetEmail)
+    .then(() => {
+      // Limpiar el campo de correo electrónico después de enviar el correo de restablecimiento
+      document.getElementById("floatingInput").value = "";
+      swal("¡Éxito!", "Tu contraseña ha sido restablecida. Por favor, revisa tu correo electrónico.", "success");
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      swal("Error", "No se pudo enviar el correo de restablecimiento. Por favor, verifica tu correo electrónico.", "error");
+    });
+});
+
+signUp.addEventListener('click',(e) => {
+
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var confirmPassword = document.getElementById('confirmPassword').value;
+      var username =document.getElementById('username').value    
+
+      if (password !== confirmPassword) {
+      alert('Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
+      return; // Detén la función si las contraseñas no coinciden
+     }
+          // Crea el usuario con correo electrónico y contraseña
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Usuario registrado exitosamente, puedes realizar acciones adicionales aquí
+          const user = userCredential.user;
+  
+          set(ref(database, 'users/' + user.uid),{
+            email: email
+          });
+  
+          alert('Usuario creado exitosamente.');
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // Handle errors aquí, por ejemplo, mostrar un mensaje de error
+          alert(errorMessage);
+        });
+    });
+  
+
+login.addEventListener('click',(e)=>{
+  var email = document.getElementById('correo').value;
+  var password = document.getElementById('contraseña').value;
+  
+
+    signInWithEmailAndPassword(auth,email,password)
+    .then((userCredential) =>{
+    //Signed in
+    const user = userCredential.user;
+    
+    const dt = new Date();
+      update(ref(database, 'users/' + user.uid),{
+        last_login:dt,
+        
+      })
+
+      alert('User logged in!');
+    //..
+  })
+    .catch((error) => {
+      const errorCode= error.code;
+      const errorMessage = error.message;
+
+      alert(errorMessage);
+  });
+
+});
+
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) =>{
+  if(user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+
+    const uid= user.uid;
+   // . . .
+  } else {
+   // User is signed out
+   // ...
+
+  }
+})
+
+logout.addEventListener('click',(e) =>{
+
+  signOut(auth).then(()  =>{
+    //sign out succesful
+    alert('user loged out');
+  }).catch((error) => {
+    //an error happened
+    const errorCode = error.code;
+     const errorMessage = error.message;
+
+     alert(errorMessage);
+  });
+
+});
+
+</script>  -->
 </html>
