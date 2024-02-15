@@ -1,7 +1,7 @@
 import { getAuth } from 'firebase/auth';
 import firebaseApp from './firebase.js';
-import postCreate from './postCreate.js';
-import getPost from './firestoreRecover.js';
+import postCreate from './post-create.js';
+import getPost from './firestore-recover.js';
 import savePost from './db.js';
 
 getAuth(firebaseApp);
